@@ -25,7 +25,6 @@ const crazy_rotate = document.getElementById("crazy-rotate");
 crazy_rotate.onclick = function crazyAction(){
   defaultState();
   crazy_rotateState = true;
-  // music.play();
 }
 
 var brain_damageState = false;
@@ -130,13 +129,6 @@ loaderLights.load(
   }
 );
 
-let music = new THREE.Audio(listener);
-let loaderMusic = new THREE.AudioLoader();
-loaderMusic.load("./sounds/get-down.mp3", function (res){
-  music.setBuffer(res);
-  music.setVolume(0.3);
-});
-
 // Functions
 function defaultBackground() {
   const color = "pink";
@@ -164,7 +156,6 @@ function defaultState() {
   crazy_rotateState = false;
   brain_damageState = false;
   controls.reset();
-  // if(music.isPlaying) music.stop();
   defaultBackground();
 }
 
