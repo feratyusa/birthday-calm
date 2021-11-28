@@ -1,0 +1,31 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+#c {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  display: block;
+}
+#buttons {
+  top: 5%;
+  left: 25%; /* This is bad smell */
+  z-index: 1;
+  position: absolute;
+  display: none;
+}
+#start{
+  font-size: xx-large;
+  bottom: 50%;
+  left: 50%;
+  z-index: 1;
+  position: absolute;
+}
+#container {
+  position: relative; /* makes this the origin of its children */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
