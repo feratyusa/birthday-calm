@@ -1,7 +1,7 @@
-import * as THREE from 'three'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-import { FontLoader } from 'three/examples/jsm/loaders/FontLoader'
-import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry'
+import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.135.0/build/three.min.js";
+import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@0.135.0/examples/jsm/controls/OrbitControls.js";
+import { FontLoader } from "https://cdn.jsdelivr.net/npm/three@0.135.0/examples/jsm/loaders/FontLoader.js";
+import { TextGeometry } from "https://cdn.jsdelivr.net/npm/three@0.135.0/examples/jsm/geometries/TextGeometry.js";
 
 // Buttons
 const buttons = document.getElementById("buttons");
