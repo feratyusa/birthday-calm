@@ -11,11 +11,18 @@ body {
 }
 #buttons {
   top: 5%;
-  left: 25%; /* This is bad smell */
+  left: 40%; /* This is bad smell */
   z-index: 1;
   position: absolute;
   display: none;
 }
+#no,
+#rotate,
+#crazy-rotate,
+#brain-damage{
+  font-size: large;
+}
+
 #start{
   font-size: xx-large;
   bottom: 50%;

@@ -1,7 +1,7 @@
-import * as THREE from "https://cdn.jsdelivr.net/npm/three@0.135.0/build/three.min.js";
-import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@0.135.0/examples/jsm/controls/OrbitControls.js";
-import { FontLoader } from "https://cdn.jsdelivr.net/npm/three@0.135.0/examples/jsm/loaders/FontLoader.js";
-import { TextGeometry } from "https://cdn.jsdelivr.net/npm/three@0.135.0/examples/jsm/geometries/TextGeometry.js";
+import * as THREE from "https://cdn.skypack.dev/three@0.135.0";
+import { OrbitControls } from "https://cdn.skypack.dev/three@0.135.0/examples/jsm/controls/OrbitControls.js";
+import { FontLoader } from "https://cdn.skypack.dev/three@0.135.0/examples/jsm/loaders/FontLoader.js";
+import { TextGeometry } from "https://cdn.skypack.dev/three@0.135.0/examples/jsm/geometries/TextGeometry.js";
 
 // Buttons
 const buttons = document.getElementById("buttons");
@@ -79,7 +79,7 @@ const loader = new FontLoader();
 
 
 function loadText(x, y, z){
-  loader.load("../fonts/Comforter_Regular.json", function (font) {
+  loader.load("./fonts/Comforter_Regular.json", function (font) {
     const __top = "Happy Birthday, Rahma!";
     const top_geometry = new TextGeometry(__top, {
       font: font,
@@ -114,7 +114,7 @@ camera.add(listener);
 let soundLights = new THREE.Audio(listener);
 let loaderLights = new THREE.AudioLoader()
 loaderLights.load(
-  "../sounds/lights-on.mp3",
+  "./sounds/lights-on.mp3",
   function (res) {
     soundLights.setBuffer(res);
     soundLights.setVolume(0.5);
@@ -132,7 +132,7 @@ loaderLights.load(
 
 let music = new THREE.Audio(listener);
 let loaderMusic = new THREE.AudioLoader();
-loaderMusic.load("../sounds/get-down.mp3", function (res){
+loaderMusic.load("./sounds/get-down.mp3", function (res){
   music.setBuffer(res);
   music.setVolume(0.3);
 });
