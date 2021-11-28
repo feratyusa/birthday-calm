@@ -25,7 +25,7 @@ const crazy_rotate = document.getElementById("crazy-rotate");
 crazy_rotate.onclick = function crazyAction(){
   defaultState();
   crazy_rotateState = true;
-  music.play();
+  // music.play();
 }
 
 var brain_damageState = false;
@@ -164,7 +164,7 @@ function defaultState() {
   crazy_rotateState = false;
   brain_damageState = false;
   controls.reset();
-  if(music.isPlaying) music.stop();
+  // if(music.isPlaying) music.stop();
   defaultBackground();
 }
 
